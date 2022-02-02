@@ -13,6 +13,9 @@ export default {
   async index(req: Request, res: Response){
     return res.json(user)
   },
+  async teste(req: Request, res: Response){
+    return res.send("Hello!")
+  },
   
   async create(req: Request, res: Response){
     const emailServices = new EmaiService();
